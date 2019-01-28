@@ -7,9 +7,9 @@ class JenkinsAppTest {
 
 	static void main(def args) {
 
-		def appNames = 'comptix-teamsite';
+		//def appNames = 'comptix-teamsite';
 		
-		def apps = Integration.getAppMetaData(appNames)
+		def apps = new Integration().main(['comptix-teamsite'])
 		
 		
 		

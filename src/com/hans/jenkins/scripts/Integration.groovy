@@ -17,7 +17,7 @@ import com.hans.jenkins.Github
  * @return apps as confirmation.
  *
  */
-static def main(List<App> apps) {
+ def main(List<App> apps) {
 
     def github = new Github()
 
@@ -76,7 +76,7 @@ static def main(List<App> apps) {
  * For complete customization, import the App class and initialize your own list.
  * @param appNames
  */
-static def getAppMetaData(String... appNames) {
+/*def getAppMetaData(String... appNames) {
 
     def apps = []
     for (def appName : appNames) {
@@ -85,4 +85,4 @@ static def getAppMetaData(String... appNames) {
     return main(apps)
 	//return apps;
 
-}
+}*/
