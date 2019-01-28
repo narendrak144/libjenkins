@@ -9,25 +9,11 @@ package com.hans.jenkins
 class App implements Serializable  {
 
     public static final HashMap list = [
-/* 
- * We'll need to figure what to do with PCI later on
- * 
- *      'middleware-pci': [
- *          dest: '/opt/tomcat7/ticketing-middleware-pci-service/webapps/ticketing-middleware-pci-service',
- *          dir: './checkout-endpoint-webapp/target/net-mlbam-ticketing-middleware-checkout-endpoint-webapp-FORCE-SOURCE-SNAPSHOT',
- *          repository: 'https://github.mlbam.net/Ticketing/middleware.git'
- *      ],
- */
-        
-        'comptix-teamsite': [
-            dest: '/opt/tomcat7/ticketing-comptix-teamsite/webapps/ticketing-comptix-teamsite',
-            dir: './teamsite/war/target/net-mlbam-ticketing-comptix-teamsite-webapp-FROM-SOURCE-SNAPSHOT',
-            repository: 'https://github.mlbam.net/Ticketing/comptix.git'
-        ],
-		'extrabases-service': [
-			dest: '/opt/extrabases-service',
+       
+		'rest-service': [
+			dest: '/user/extrabases-service',
 			dir: './build/libs',
-			repository: 'https://github.mlbam.net/site-extrabases/extrabases-service.git'
+			repository: 'https://github.com/narendrak144/rest-service.git'
 		]
     ]
 

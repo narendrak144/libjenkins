@@ -76,7 +76,7 @@ import com.hans.jenkins.Github
  * For complete customization, import the App class and initialize your own list.
  * @param appNames
  */
-/*def getAppMetaData(String... appNames) {
+def integration(String... appNames) {
 
     def apps = []
     for (def appName : appNames) {
@@ -85,4 +85,4 @@ import com.hans.jenkins.Github
     return main(apps)
 	//return apps;
 
-}*/
+}
