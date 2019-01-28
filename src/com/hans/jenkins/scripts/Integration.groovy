@@ -76,7 +76,7 @@ import com.hans.jenkins.Github
  * For complete customization, import the App class and initialize your own list.
  * @param appNames
  */
-def integration(String... appNames) {
+def call(String... appNames) {
 
     def apps = []
     for (def appName : appNames) {
