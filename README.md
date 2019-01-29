@@ -28,7 +28,7 @@ Ex. `Jenkinsfile`
 @Library('libjenkins') _
 
 // -*- mode: groovy; c-basic-offset: 2 -*-
-// libjenkins docs https://github.mlbam.net/jenkins/libjenkins
+// libjenkins docs https://github.narendrak144/libjenkins
 
 new com.hans.jenkins.scripts.Integration().main(
     "rest-service",
