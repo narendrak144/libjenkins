@@ -21,26 +21,19 @@ import com.hans.jenkins.Github
 
    node('master') {
             stage('Setup') {
-                step{
                     echo "pull mvn container"
                     //mvnPullContainer()
-                }
             }
             stage('Checkout') {
-                step{
 					
 					echo "just doing checkout branch "
                    // checkout scm
-                }
             }
             stage('Build/Test') {
-                step {
                     echo "mvn test/package"
                    // mvnTestPackage env.BRANCH_NAME
-                }
             }
             stage('RPM') {
-                step {
 						echo "just I am getting RPM"
 					/*
                     echo "${github.integrationBranch} <> ${env.BRANCH_NAME}"
@@ -52,19 +45,13 @@ import com.hans.jenkins.Github
                             currentBuild.displayName += "${app.name} : ${env.BRANCH_NAME} : ${app.getRpmVersion()}\n"
                         }
                     }*/
-                }
             }
             stage('Deploy Dev') {
-                step {
 					echo "successfully deployed"
                    // deployIntegration apps, env.BRANCH_NAME
-                }
             }
         
     }
-
-    return apps
-
 }
 
 /**
