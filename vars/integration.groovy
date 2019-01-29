@@ -1,5 +1,3 @@
-package com.hans.jenkins.scripts
-
 //@Library("jenkins-shared-libraries@release")
 //@Library('github.com/mschuchard/jenkins-devops-libs@version')_
 import com.hans.jenkins.App
