@@ -19,9 +19,7 @@ import com.hans.jenkins.Github
 
     def github = new Github()
 
-   pipeline {
-        agent any
-        stages {
+   node('master') {
             stage('Setup') {
                 steps {
                     echo "pull mvn container"
@@ -56,13 +54,13 @@ import com.hans.jenkins.Github
                     }*/
                 }
             }
-            stage('Deploy QA') {
+            stage('Deploy Dev') {
                 steps {
 					echo "successfully deployed"
                    // deployIntegration apps, env.BRANCH_NAME
                 }
             }
-        }
+        
     }
 
     return apps
